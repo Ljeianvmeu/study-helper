@@ -1,0 +1,82 @@
+# --- Node/Frontend ---
+node_modules/
+frontend/node_modules/
+frontend/dist/
+frontend/dist-electron/
+frontend/release/
+frontend/.vite/
+frontend/.cache/
+
+# Electron builder outputs and configs
+frontend/electron-builder.json5
+*.blockmap
+*.yml
+*.yaml
+*.dmg
+*.exe
+*.zip
+*.7z
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# --- Python/Backend ---
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+*.egg-info/
+.eggs/
+.venv/
+venv/
+ENV/
+
+# Python build artifacts (exclude built executables and bundles)
+backend/build/
+backend/dist/
+backend/*.spec
+
+# Byte-compiled / compiled / C extensions
+backend/**/__pycache__/
+backend/**/.mypy_cache/
+backend/**/.pytest_cache/
+
+# Virtual environment
+backend/.venv/
+
+# Coverage/testing
+.coverage
+.pytest_cache/
+htmlcov/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+*.iml
+
+# Env files (do not commit secrets)
+.env
+backend/.env
+
+# App runtime outputs (keep data directory by requirement)
+study-helper/
+!study-helper/data/
+!study-helper/data/**
+# Ignore runtime outputs and temp
+study-helper/output/
+study-helper/temp/
+
+# Excel temp/lock files
+~$*.xlsx
+
+# Misc caches
+.cache/
