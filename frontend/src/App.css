@@ -1,0 +1,10 @@
+/* frontend/src/App.css */
+
+/* 确保应用容器占满整个视口 */
+#root {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
